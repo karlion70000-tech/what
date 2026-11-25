@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTO PREMIUM</title>
+    <link rel="stylesheet" href="автосалон.css">
+</head>
+<body>
+    <script src="автосалон.JS">
+    
+    </script>
+<header>
+    <div class="logo">AUTO<span>PREMIUM</span></div>
+
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#cars">Автомобили</a>
+        <a href="#about">О нас</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+    
+     <form action="/register" method="post">
+        <input type="text" name="username" placeholder="Логин" required><br>
+        <input type="email" name="email" placeholder="Email" required><br>
+        <input type="password" name="password" placeholder="Пароль" required><br>
+        <button type="submit">Зарегистрироваться</button>
+     </form>
+     
+
+     
+    <button class="header-btn" onclick="contactsUs()">
+        Связаться
+    </button>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="subtitle">МИР ПРЕМИЯЛЬНЫХ АВТОМОБИЛЕЙ</p> 
+        <h1>найди свои<br>идеальный автомобиль</h1>
+        <p>открой для себя коллекцию лучших авто</p>
+        <a href="#cars" class="main-btn">Смотреть авто</a>
+    </div>
+</section>
+
+<section class="cars" id="cars">
+    <h2>Наши авто</h2>
+    <p class="section-desc">Выберите авто своей мечты</p>
+
+    <div class="car-container">
+
+        <div class="car-card">
+            <img src="merc.jpeg" alt="">
+            <div class="car-info">
+                <h3>Mercedes-Benz</h3>
+                <p>Maybach S 580 4MATIC (4.0 л V8, 503 л.с.)</p>
+                <h4>121.000.000 тг</h4>
+                <button onclick="buyCAR">more</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="car-card">
+        <img src="ferrari 1.jpeg" alt="">
+        <div class="car-info">
+          <h3> Ferrari 458 Italia</h3>
+          <P>NEW CAR</P>
+          <h2>135.000.000 тг</h2>
+          <BUtton onclick="buyCAR">more</BUtton>
+
+        </div>
+        
+         <div class="car-card">
+            <img src="911.jpg" alt="">
+            <div class="car-info">
+              <h3>Porsche Turbo S 911</h3>
+              <p> Porsche 911 Turbo S (3.8 л B6, 580 л.с.)</p>
+              <h2>315.000.000 тг</h2>
+              <button onclick="buyCAR">more</button>
+            </div>
+
+         </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2>О НАШЕМ АВТОСАЛОНЕ</h2>
+    <p>
+        AUTO PREMIUM - место, где качество встречается с комфортом. Мы предлагаем 
+        широкий выбор современных и премияльных авто.
+    </p>
+</section>
+
+<section class="contacts" id="contacts">
+    <h2>СВЯЖИТЕСЬ С НАМИ</h2>
+    <p>Поможем подобрать автомобиль вашей мечты.</p>
+    <button onclick="contactsUs()">Оставить заявку</button>
+</section>
+
+<footer>
+    <p>© 2026 Sport and Luxury AUTO. Все права защищены.</p>
+</footer>
+</body>
+</html>
