@@ -7,10 +7,8 @@
     <link rel="stylesheet" href="автосалон.css">
 </head>
 <body>
-    <script src="автосалон.JS">
     
-    </script>
-<header>
+ <header>
     <div class="logo">AUTO<span>PREMIUM</span></div>
 
     <nav>
@@ -29,76 +27,129 @@
      
 
      
-    <button class="header-btn" onclick="contactsUs()">
-        Связаться
-    </button>
-</header>
+     <a href="#contacts" class="main-btn">Связаться</a>
 
-<section class="hero" id="home">
+ </header>
+
+
+
+
+ <section class="hero" id="home">
     <div class="hero-content">
         <p class="subtitle">МИР ПРЕМИЯЛЬНЫХ АВТОМОБИЛЕЙ</p> 
-        <h1>найди свои<br>идеальный автомобиль</h1>
-        <p>открой для себя коллекцию лучших авто</p>
+        <h1>Найди свои<br>идеальный автомобиль</h1>
+        <p>Открой для себя коллекцию лучших авто</p>
         <a href="#cars" class="main-btn">Смотреть авто</a>
     </div>
-</section>
+ </section>
 
-<section class="cars" id="cars">
-    <h2>Наши авто</h2>
-    <p class="section-desc">Выберите авто своей мечты</p>
+    <section class="cars" id="cars">
+       <h2>Наши авто</h2>
+       <p class="section-desc">Выберите авто своей мечты</p>
 
-    <div class="car-container">
-
-        <div class="car-card">
-            <img src="merc.jpeg" alt="">
-            <div class="car-info">
-                <h3>Mercedes-Benz</h3>
-                <p>Maybach S 580 4MATIC (4.0 л V8, 503 л.с.)</p>
-                <h4>121.000.000 тг</h4>
-                <button onclick="buyCAR">more</button>
-            </div>
+        <div class="car-container">
+    <div class="car-card">
+        <img src="rr cullinan.jpeg" alt="Rolls-Royce Cullinan">
+        <div class="car-info">
+            <h3>Rolls-Royce</h3>
+            <p>Cullinan AWD (6.75 л V12, 571 л.с.)</p>
+            <h2>210.000.000 тг</h2>
+            <button onclick="buyCAR('Rolls-Royce Cullinan')">more</button>
         </div>
     </div>
 
     <div class="car-card">
-        <img src="ferrari 1.jpeg" alt="">
+        <img src="mclaren.jpg" alt="McLaren 720S">
         <div class="car-info">
-          <h3> Ferrari 458 Italia</h3>
-          <P>NEW CAR</P>
-          <h2>135.000.000 тг</h2>
-          <BUtton onclick="buyCAR">more</BUtton>
-
+            <h3>McLaren</h3>
+            <p>720S Coupe RWD (4.0 л V8, 720 л.с.)</p>
+            <h2>130.000.000 тг</h2>
+            <button onclick="buyCAR('McLaren 720S')">more</button>
         </div>
-        
-         <div class="car-card">
-            <img src="911.jpg" alt="">
-            <div class="car-info">
-              <h3>Porsche Turbo S 911</h3>
-              <p> Porsche 911 Turbo S (3.8 л B6, 580 л.с.)</p>
-              <h2>315.000.000 тг</h2>
-              <button onclick="buyCAR">more</button>
-            </div>
-
-         </div>
     </div>
-</section>
 
-<section class="about" id="about">
+    <div class="car-card">
+        <img src="bmw m5 f90.jpg" alt="BMW M5 F90">
+        <div class="car-info">
+            <h3>BMW M5 F90</h3>
+            <p>M5 Competition F90 M xDrive (4.4 л V8, 625 л.с.)</p>
+            <h2>65.000.000 тг</h2>
+            <button onclick="buyCAR('BMW M5 F90 Competition')">more</button>
+        </div>
+    </div>
+
+    <div class="car-card">
+        <img src="merc.jpeg" alt="Mercedes-Benz Maybach S 580">
+        <div class="car-info">
+            <h3>Mercedes-Benz</h3>
+            <p>Maybach S 580 4MATIC (4.0 л V8, 503 л.с.)</p>
+            <h2>121.000.000 тг</h2>
+            <button onclick="buyCAR('Mercedes-Benz Maybach S 580')">more</button>
+        </div>
+    </div>
+
+    <div class="car-card">
+        <img src="ferrari 1.jpeg" alt="Ferrari 458 Italia">
+        <div class="car-info">
+            <h3>Ferrari 458 Italia</h3>
+            <p>Ferrari 458 Italia RWD (4.5 л V8, 570 л.с.)</p>
+            <h2>135.000.000 тг</h2>
+            <button onclick="buyCAR('Ferrari 458 Italia')">more</button>
+        </div>
+    </div>
+
+    <div class="car-card">
+        <img src="911.jpg" alt="Porsche 911 Turbo S">
+        <div class="car-info">
+            <h3>Porsche Turbo S 911</h3>
+            <p>Porsche 911 Turbo S (3.8 л B6, 580 л.с.)</p>
+            <h2>315.000.000 тг</h2>
+            <button onclick="buyCAR('Porsche 911 Turbo S')">more</button>
+        </div>
+    </div>
+</div>
+
+    </section>
+
+ <section class="about" id="about">
     <h2>О НАШЕМ АВТОСАЛОНЕ</h2>
     <p>
         AUTO PREMIUM - место, где качество встречается с комфортом. Мы предлагаем 
-        широкий выбор современных и премияльных авто.
+        широкий выбор современных и премияльных авто. <br>Контакты: 
+        <br> +7 555 555 5555 <br> +7 555 555 5556
     </p>
-</section>
+ </section>
 
-<section class="contacts" id="contacts">
-    <h2>СВЯЖИТЕСЬ С НАМИ</h2>
-    <p>Поможем подобрать автомобиль вашей мечты.</p>
-    <button onclick="contactsUs()">Оставить заявку</button>
-</section>
+     <section class="contacts" id="contacts">
+        <h2>СВЯЖИТЕСЬ С НАМИ</h2>
+        <p>Мы поможем подобрать автомобиль вашей мечты.</p>
 
-<footer>
-    <p>© 2026 Sport and Luxury AUTO. Все права защищены.</p>
-</footer>
+        <div class="review-box">
+            <h3>Оцените наш автосалон</h3>
+            <form onsubmit="submitReview(event)">
+                <input type="text" id="reviewName" placeholder="Ваше имя" required>
+
+                <div class="rating-box">
+                    <p>Ваша оценка:</p>
+                    <div class="stars" id="starContainer">
+                        <span class="star active" data-value="1">&#9733;</span>
+                        <span class="star active" data-value="2">&#9733;</span>
+                        <span class="star active" data-value="3">&#9733;</span>
+                        <span class="star active" data-value="4">&#9733;</span>
+                        <span class="star active" data-value="5">&#9733;</span>
+                    </div>
+                    <input type="hidden" id="ratingValue" value="5">
+                </div>
+
+                <textarea id="reviewText" rows="4" placeholder="Напишите ваш отзыв..." required></textarea>
+                <button type="submit">Отправить отзыв</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Sport and Luxury AUTO. Все права защищены.</p>
+    </footer>
+    <script src="автосалон.JS"></script>
 </body>
 </html>

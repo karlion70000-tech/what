@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оставить отзыв — AUTO PREMIUM</title>
+    <link rel="stylesheet" href="автосалон.css">
+</head>
+<body class="review-page">
+
+    <div class="review-container">
+        <h2>Оставить отзыв об автосалоне</h2>
+        <form onsubmit="submitReview(event)">
+            <input type="text" id="reviewName" placeholder="Ваше имя" required>
+
+            <div class="rating-box">
+                <p>Оцените наш сервис:</p>
+                <div class="stars" id="starContainer">
+                    <span class="star active" data-value="1">&#9733;</span>
+                    <span class="star active" data-value="2">&#9733;</span>
+                    <span class="star active" data-value="3">&#9733;</span>
+                    <span class="star active" data-value="4">&#9733;</span>
+                    <span class="star active" data-value="5">&#9733;</span>
+                </div>
+                <input type="hidden" id="ratingValue" value="5">
+            </div>
+
+            <textarea id="reviewText" rows="4" placeholder="Напишите ваш отзыв..." required></textarea>
+            <button type="submit" class="main-btn">Отправить отзыв</button>
+        </form>
+    </div>
+
+    <script src="автосалон.JS"></script>
+</body>
+</html>
