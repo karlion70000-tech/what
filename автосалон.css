@@ -312,3 +312,133 @@ body.review-page {
 .star.active {
     color: gold;
 }
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 992px) {
+    header,
+    section,
+    footer {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .cars {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 15px;
+    }
+
+    
+    .hero {
+        min-height: 75vh;
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+        line-height: 1.25;
+    }
+
+    .hero p {
+        font-size: 16px;
+        margin: 15px 0 25px;
+    }
+
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+  
+    .cars {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .car-card {
+        padding: 15px;
+    }
+
+    .car-card h3 {
+        font-size: 20px;
+    }
+
+  
+    .about,
+    .features,
+    .contacts {
+        padding: 40px 20px;
+    }
+
+    
+    .review-box {
+        width: 100%;
+        padding: 20px 15px;
+        margin-top: 25px;
+    }
+
+    .review-box h3 {
+        font-size: 20px;
+    }
+
+    .stars {
+        font-size: 40px;
+        letter-spacing: 4px;
+    }
+
+    .review-box input,
+    .review-box textarea {
+        font-size: 16px; 
+        width: 100%;
+    }
+
+    button,
+    .main-btn {
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    footer {
+        padding: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+}
